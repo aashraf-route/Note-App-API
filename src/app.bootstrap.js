@@ -9,8 +9,8 @@ export const bootstrap = (express, app) => {
     process.exit(1);
   }
 
-  app.listen(process.env.Port, () => {
-    console.log(`Server is running on port ${process.env.Port}`);
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
   });
 
   app.use(express.json());
