@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const DBName = process.env.DB_NAME;
-const DBUrl =  `${process.env.MONGODB_URI}/${DBName}`;
+const DBUrl =  process.env.MONGODB_URI;;
 
 export const dbConnectStatus = {
   failed: "failed",
