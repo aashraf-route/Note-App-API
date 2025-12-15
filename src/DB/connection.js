@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const DBName = process.env.DB_NAME || "stickyNotes";
+const DBName = process.env.DB_NAME;
 const DBUrl =  `${process.env.MONGODB_URI}/${DBName}`;
 
 export const dbConnectStatus = {
