@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-const DBName = "stickyNotes";
-const DBUrl = `mongodb://127.0.0.1:27017/${DBName}`;
+const DBName = process.env.DB_NAME || "stickyNotes";
+const DBUrl =  `${process.env.MONGODB_URI}/${DBName}`;
 
 export const dbConnectStatus = {
   failed: "failed",
